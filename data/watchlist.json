@@ -1,0 +1,79 @@
+{
+  "updatedAt": "2026-03-18T14:30:00+08:00",
+  "indices": [
+    { "label": "TAIEX", "value": "22,418.76", "changePct": 0.84, "note": "AI 與電子權值續強" },
+    { "label": "NASDAQ", "value": "18,206.11", "changePct": 1.13, "note": "成長股偏多" },
+    { "label": "BTC", "value": "83,450", "changePct": -0.62, "note": "高檔震盪" },
+    { "label": "USD/TWD", "value": "31.62", "changePct": 0.15, "note": "台幣略弱" }
+  ],
+  "watchlist": [
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "price": 932.15,
+      "changePct": 2.42,
+      "volume": "High",
+      "thesis": "留意 AI 伺服器鏈帶動的延續性。",
+      "prices": [884, 892, 901, 908, 915, 924, 932]
+    },
+    {
+      "symbol": "TSM",
+      "name": "Taiwan Semi",
+      "price": 149.62,
+      "changePct": 1.18,
+      "volume": "Normal",
+      "thesis": "法說前觀察外資回補力道。",
+      "prices": [141, 142, 143, 145, 146, 148, 149.6]
+    },
+    {
+      "symbol": "QQQ",
+      "name": "Nasdaq ETF",
+      "price": 447.33,
+      "changePct": 0.51,
+      "volume": "Normal",
+      "thesis": "偏多趨勢未破，但追價風險上升。",
+      "prices": [438, 439, 440, 442, 444, 446, 447.3]
+    },
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "price": 83450,
+      "changePct": -0.62,
+      "volume": "High",
+      "thesis": "守住 82k 才有機會再攻。",
+      "prices": [86100, 85500, 85100, 84500, 84200, 83800, 83450]
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "price": 212.41,
+      "changePct": -1.04,
+      "volume": "Low",
+      "thesis": "短線轉弱，等待新催化。",
+      "prices": [219, 218, 217, 216, 215, 214, 212.4]
+    }
+  ],
+  "alerts": [
+    {
+      "level": "high",
+      "title": "開盤前先確認重大財報",
+      "detail": "今晚留意美股盤後財報，決定隔日科技股風險暴露。"
+    },
+    {
+      "level": "medium",
+      "title": "台積電 ADR 與現股價差",
+      "detail": "若價差擴大，可作為隔日台股半導體情緒判斷。"
+    },
+    {
+      "level": "low",
+      "title": "記錄每筆進場理由",
+      "detail": "把觸發條件寫下來，方便日後回測與優化策略。"
+    }
+  ],
+  "playbook": [
+    "先看大盤結構，再看個股，不要因為單一新聞就重押。",
+    "單筆風險維持在總資金 0.5% 到 1%。",
+    "若指數與領漲股背離，先縮手，不要硬追。",
+    "重大事件前保留現金，提高彈性。"
+  ]
+}

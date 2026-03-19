@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "timezone": "Asia/Taipei",
+  "schedule": {
+    "time": "21:00",
+    "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+    "skip_market_holidays": true
+  },
+  "symbols": {
+    "core": ["NVDA", "AMD"],
+    "watch": ["ETN", "GSAT", "ZETA", "RTX"],
+    "max_total": 8
+  },
+  "report": {
+    "empty_news_text": "今晚沒新聞",
+    "opening_bias_labels": ["利多", "中性", "利空"],
+    "keep_symbol_length_consistent": true
+  },
+  "output": {
+    "latest_json": "data/latest_premarket_report.json",
+    "latest_md": "reports/latest_premarket_report.md",
+    "archive_dir": "reports"
+  }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Dashboard</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Boba Fei · Premarket Storyboard</p>
+          <h1>Market Dashboard</h1>
+          <p class="hero-copy">
+            把今晚市場重點整理成可快速閱讀的盤前動畫簡報，先從本機 JSON 骨架開始，之後再逐步接上真實資料與排程。
+          </p>
+        </div>
+        <div class="hero-panel">
+          <div class="status-pill">
+            <span class="dot"></span>
+            <span id="last-updated">載入中</span>
+          </div>
+          <div class="hero-actions">
+            <button type="button" class="ghost-btn is-active" data-slide-nav="prev">上一張</button>
+            <button type="button" class="ghost-btn" data-slide-nav="next">下一張</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="card-block slideshow-block">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Premarket Slides</p>
+              <h2>每日美股盤前動畫簡報</h2>
+            </div>
+            <div class="slideshow-meta">
+              <span id="slide-counter" class="helper-text">1 / 4</span>
+              <button type="button" class="ghost-btn" id="autoplay-toggle">自動播放：開</button>
+            </div>
+          </div>
+
+          <div class="slideshow-shell">
+            <div id="slides-track" class="slides-track"></div>
+          </div>
+
+          <div id="slides-dots" class="slides-dots" aria-label="簡報分頁"></div>
+        </section>
+
+        <section class="card-block">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Overview</p>
+              <h2>市場概況</h2>
+            </div>
+          </div>
+          <div id="snapshot-grid" class="snapshot-grid"></div>
+        </section>
+
+        <section class="content-grid">
+          <article class="card-block span-two">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">Watchlist</p>
+                <h2>追蹤清單</h2>
+              </div>
+              <label class="search-box">
+                <span>搜尋</span>
+                <input id="symbol-filter" type="search" placeholder="輸入股票或標的代號" />
+              </label>
+            </div>
+            <div class="table-shell">
+              <table>
+                <thead>
+                  <tr>
+                    <th>標的</th>
+                    <th>價格</th>
+                    <th>漲跌幅</th>
+                    <th>量能</th>
+                    <th>趨勢</th>
+                    <th>觀察重點</th>
+                  </tr>
+                </thead>
+                <tbody id="watchlist-body"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <aside class="card-block stack-gap">
+            <div class="section-heading compact">
+              <div>
+                <p class="section-kicker">Momentum</p>
+                <h2>強弱勢排行</h2>
+              </div>
+            </div>
+            <div id="movers-list" class="movers-list"></div>
+          </aside>
+
+          <article class="card-block">
+            <div class="section-heading compact">
+              <div>
+                <p class="section-kicker">Alerts</p>
+                <h2>策略提醒</h2>
+              </div>
+            </div>
+            <div id="alerts-list" class="alerts-list"></div>
+          </article>
+
+          <article class="card-block">
+            <div class="section-heading compact">
+              <div>
+                <p class="section-kicker">Plan</p>
+                <h2>今日劇本</h2>
+              </div>
+            </div>
+            <ol id="playbook-list" class="playbook-list"></ol>
+          </article>
+
+          <article class="card-block span-two">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">Notes</p>
+                <h2>盤中筆記</h2>
+              </div>
+              <span class="helper-text">儲存在瀏覽器 localStorage，適合先做雛形。</span>
+            </div>
+            <textarea
+              id="desk-notes"
+              class="notes-input"
+              placeholder="記下觀察、策略、風險提醒，之後可以再改成同步到後端。"
+            ></textarea>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

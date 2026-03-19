@@ -1,0 +1,6 @@
+- 本機靜態預覽：`python3 -m http.server 4173`
+- 主要修改檔案：
+  - `index.html`
+  - `assets/styles.css`
+  - `assets/app.js`
+  - `data/watchlist.json`
