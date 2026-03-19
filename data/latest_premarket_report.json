@@ -1,67 +1,80 @@
 {
-  "generatedAt": "2026-03-19T21:00:00+08:00",
+  "generatedAt": "2026-03-19T17:48:57.611144+08:00",
   "overview": {
-    "marketSentiment": "中性偏多",
-    "mainTheme": "AI 主線延續，但高位震盪加大",
-    "riskEvent": "留意盤後財報與 Fed 官員發言",
-    "focus": ["NVDA", "AMD", "ETN"]
+    "marketSentiment": "待補資料",
+    "mainTheme": "待補資料",
+    "riskEvent": "待補資料",
+    "focus": [
+      "NVDA",
+      "AMD",
+      "ETN"
+    ]
   },
   "core": [
     {
       "symbol": "NVDA",
-      "news": "AI 伺服器需求仍為市場主線。",
-      "judgement": "趨勢未破，但不適合高位追價。",
-      "premarket": "+1.8%",
-      "openingBias": "利多",
-      "observation": "看開盤後是否站穩前高區。"
+      "news": "今晚沒新聞",
+      "judgement": "待補判讀",
+      "premarket": "資料不足",
+      "openingBias": "中性",
+      "observation": "待補觀察"
     },
     {
       "symbol": "AMD",
-      "news": "市場關注 AI GPU 與資料中心節奏。",
-      "judgement": "屬於跟隨主線的高 Beta 標的。",
-      "premarket": "+0.9%",
+      "news": "今晚沒新聞",
+      "judgement": "待補判讀",
+      "premarket": "資料不足",
       "openingBias": "中性",
-      "observation": "若量能不足，容易轉震盪。"
+      "observation": "待補觀察"
     }
   ],
   "watch": [
     {
       "symbol": "ETN",
-      "news": "基建與電力題材持續被關注。",
-      "judgement": "若資金回流工業，容易成為輪動焦點。",
-      "premarket": "+0.6%",
+      "news": "今晚沒新聞",
+      "judgement": "待補判讀",
+      "premarket": "資料不足",
       "openingBias": "中性",
-      "observation": "留意能否守住五日線。"
+      "observation": "待補觀察"
     },
     {
       "symbol": "GSAT",
       "news": "今晚沒新聞",
-      "judgement": "小型題材股，波動大、延續性較差。",
+      "judgement": "待補判讀",
       "premarket": "資料不足",
       "openingBias": "中性",
-      "observation": "只適合當情緒溫度計，不適合重押。"
+      "observation": "待補觀察"
     },
     {
       "symbol": "ZETA",
-      "news": "市場偏向題材交易。",
-      "judgement": "高波動，高風險。",
-      "premarket": "+3.2%",
-      "openingBias": "利多",
-      "observation": "若開高走低，要特別防追高。"
+      "news": "今晚沒新聞",
+      "judgement": "待補判讀",
+      "premarket": "資料不足",
+      "openingBias": "中性",
+      "observation": "待補觀察"
     },
     {
       "symbol": "RTX",
-      "news": "防禦型與工業股輪動觀察中。",
-      "judgement": "相對穩定，可當市場風格對照組。",
-      "premarket": "+0.2%",
+      "news": "今晚沒新聞",
+      "judgement": "待補判讀",
+      "premarket": "資料不足",
       "openingBias": "中性",
-      "observation": "看是否有資金回防大型防禦股。"
+      "observation": "待補觀察"
     }
   ],
   "actionSummary": {
-    "mostImportant": ["NVDA", "AMD", "ETN"],
-    "coreView": "核心持股維持偏多思路，但不追高，等回踩或確認量價再動作。",
-    "highestVolatility": ["GSAT", "ZETA"],
-    "ifMarketWeakens": ["GSAT"]
+    "mostImportant": [
+      "NVDA",
+      "AMD",
+      "ETN"
+    ],
+    "coreView": "待補核心持股看法",
+    "highestVolatility": [
+      "GSAT",
+      "ZETA"
+    ],
+    "ifMarketWeakens": [
+      "GSAT"
+    ]
   }
 }
