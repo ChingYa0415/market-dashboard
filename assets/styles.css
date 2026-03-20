@@ -496,6 +496,12 @@ th {
   line-height: 1.65;
 }
 
+.story-item p a {
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+}
+
 .story-item p:last-child {
   margin-bottom: 0;
 }

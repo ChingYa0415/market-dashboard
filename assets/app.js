@@ -376,6 +376,8 @@ function renderReportItem(item) {
         <span class="bias-pill ${getBiasClass(item.openingBias)}">${item.openingBias}</span>
       </div>
       <p><span>新聞</span>${item.news}</p>
+      <p><span>來源</span>${item.newsSource ?? "未提供"}</p>
+      <p><span>摘要</span>${item.newsSummary ?? "摘要不足"}</p>
       <p><span>判讀</span>${item.judgement}</p>
       <p><span>盤前</span>${item.premarket}</p>
       <p><span>觀察</span>${item.observation}</p>

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-19T17:48:57.611144+08:00",
+  "generatedAt": "2026-03-20T11:42:42.951356+08:00",
   "overview": {
     "marketSentiment": "待補資料",
-    "mainTheme": "待補資料",
-    "riskEvent": "待補資料",
+    "mainTheme": "以個股新聞骨架彙整，待補更完整市場主線判讀",
+    "riskEvent": "若新聞量不足，需另查財報、Fed 與宏觀事件",
     "focus": [
       "NVDA",
       "AMD",
@@ -13,53 +13,71 @@
   "core": [
     {
       "symbol": "NVDA",
-      "news": "今晚沒新聞",
-      "judgement": "待補判讀",
-      "premarket": "資料不足",
+      "news": "Brent Crude Oil Briefly Topped $119 as Iran Ramps Up Attacks on Gas and Oil Facilities in the Persian Gulf. Here Are 2 Things for Investors…（Yahoo）",
+      "newsSource": "Yahoo",
+      "newsSummary": "Energy has become a target as the war with Iran escalates.",
+      "newsUrl": "https://finnhub.io/api/news?id=06b97f776ad0837f84fa87f54da1526c5caccb301edb18c3fdbbfd0b9d0e0875",
+      "judgement": "依新聞摘要初判：Energy has become a target as the war with Iran escalates.",
+      "premarket": "資料待接入",
       "openingBias": "中性",
-      "observation": "待補觀察"
+      "observation": "留意 NVDA 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "AMD",
-      "news": "今晚沒新聞",
-      "judgement": "待補判讀",
-      "premarket": "資料不足",
+      "news": "AmberSemi to Exhibit at APEC 2026, Showcasing New PowerTile™ Solutions to Solve AI Data Center Power Problems（Yahoo）",
+      "newsSource": "Yahoo",
+      "newsSummary": "Amber Semiconductor, Inc. (AmberSemi™), a fabless semiconductor company pioneering the next generation of power management for data centers, announced today its attendance at Applied Power Electronics Expo 2026 (APEC) a…",
+      "newsUrl": "https://finnhub.io/api/news?id=e897ffb134ddedbe6a5ee0fb5ed468079a0a47376cd5e21392ddbc3841fd245f",
+      "judgement": "依新聞摘要初判：Amber Semiconductor, Inc. (AmberSemi™), a fabless semiconductor company pioneering the next generation of power management for data centers, announced today its attendance at Applied Power Electronics Expo 2026 (APEC) a…",
+      "premarket": "資料待接入",
       "openingBias": "中性",
-      "observation": "待補觀察"
+      "observation": "留意 AMD 是否延續 Yahoo 所反映的市場敘事。"
     }
   ],
   "watch": [
     {
       "symbol": "ETN",
-      "news": "今晚沒新聞",
-      "judgement": "待補判讀",
-      "premarket": "資料不足",
-      "openingBias": "中性",
-      "observation": "待補觀察"
+      "news": "Eaton Unveils Brightlayer Energy, an AI-Powered Energy Management and Optimization Software To Drive New Levels of Efficiency and Flexibili…（Yahoo）",
+      "newsSource": "Yahoo",
+      "newsSummary": "New Brightlayer Energy software delivers automated, dynamic and grid-interactive energy optimization Comprehensive monitoring and reporting for Scope 1 and 2 emissions supports compliance with regional regulatory requir…",
+      "newsUrl": "https://finnhub.io/api/news?id=747b711c7a278f18e3a9a8a0dc81ed05562e82dd57c2241b6f80198e43793d6c",
+      "judgement": "依新聞摘要初判：New Brightlayer Energy software delivers automated, dynamic and grid-interactive energy optimization Comprehensive monitoring and reporting for Scope 1 and 2 emissions supports compliance with regional regulatory requir…",
+      "premarket": "資料待接入",
+      "openingBias": "利空",
+      "observation": "留意 ETN 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "GSAT",
       "news": "今晚沒新聞",
+      "newsSource": "fallback",
+      "newsSummary": "最近沒有抓到可用新聞。",
+      "newsUrl": "",
       "judgement": "待補判讀",
-      "premarket": "資料不足",
+      "premarket": "資料待接入",
       "openingBias": "中性",
-      "observation": "待補觀察"
+      "observation": "GSAT 暫時以價格與量能為主，等待更多催化。"
     },
     {
       "symbol": "ZETA",
       "news": "今晚沒新聞",
+      "newsSource": "fallback",
+      "newsSummary": "最近沒有抓到可用新聞。",
+      "newsUrl": "",
       "judgement": "待補判讀",
-      "premarket": "資料不足",
+      "premarket": "資料待接入",
       "openingBias": "中性",
-      "observation": "待補觀察"
+      "observation": "ZETA 暫時以價格與量能為主，等待更多催化。"
     },
     {
       "symbol": "RTX",
-      "news": "今晚沒新聞",
-      "judgement": "待補判讀",
-      "premarket": "資料不足",
+      "news": "The U.S. Army’s $20B Anduril Deal Points to Upside for Palantir, Lockheed Martin, and Defense Tech Stocks（Yahoo）",
+      "newsSource": "Yahoo",
+      "newsSummary": "The U.S. Army is reshaping how it works with defense tech firms, and two recent deals help showcase that shift. One is with private firm Anduril, and the other is with Palantir Technologies (PLTR). Together, they point…",
+      "newsUrl": "https://finnhub.io/api/news?id=71be7f7723123a249f75860eefafc826991c8707da03d6d04a5cdc08d4d76ce7",
+      "judgement": "依新聞摘要初判：The U.S. Army is reshaping how it works with defense tech firms, and two recent deals help showcase that shift. One is with private firm Anduril, and the other is with Palantir Technologies (PLTR). Together, they point…",
+      "premarket": "資料待接入",
       "openingBias": "中性",
-      "observation": "待補觀察"
+      "observation": "留意 RTX 是否延續 Yahoo 所反映的市場敘事。"
     }
   ],
   "actionSummary": {
@@ -68,13 +86,13 @@
       "AMD",
       "ETN"
     ],
-    "coreView": "待補核心持股看法",
+    "coreView": "先用免費新聞來源建立晚間快報骨架，關鍵決策仍需人工複核。",
     "highestVolatility": [
-      "GSAT",
-      "ZETA"
+      "ETN",
+      "GSAT"
     ],
     "ifMarketWeakens": [
-      "GSAT"
+      "ETN"
     ]
   }
 }
