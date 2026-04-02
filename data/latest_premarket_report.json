@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-20T11:42:42.951356+08:00",
+  "generatedAt": "2026-04-02T21:00:38.411179+08:00",
   "overview": {
-    "marketSentiment": "待補資料",
-    "mainTheme": "以個股新聞骨架彙整，待補更完整市場主線判讀",
-    "riskEvent": "若新聞量不足，需另查財報、Fed 與宏觀事件",
+    "marketSentiment": "市場情緒待補（VIX 暫時不可用）",
+    "mainTheme": "以個股新聞骨架彙整，宏觀利率資料仍不完整",
+    "riskEvent": "宏觀風險資料暫時不足",
     "focus": [
       "NVDA",
       "AMD",
@@ -13,23 +13,23 @@
   "core": [
     {
       "symbol": "NVDA",
-      "news": "Brent Crude Oil Briefly Topped $119 as Iran Ramps Up Attacks on Gas and Oil Facilities in the Persian Gulf. Here Are 2 Things for Investors…（Yahoo）",
+      "news": "Babel Street Extends Free Real-Time Risk Intelligence to U.S. Tech Companies Operating Across the Middle East Being Targeted by Iran’s Isla…（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "Energy has become a target as the war with Iran escalates.",
-      "newsUrl": "https://finnhub.io/api/news?id=06b97f776ad0837f84fa87f54da1526c5caccb301edb18c3fdbbfd0b9d0e0875",
-      "judgement": "依新聞摘要初判：Energy has become a target as the war with Iran escalates.",
-      "premarket": "資料待接入",
-      "openingBias": "中性",
+      "newsSummary": "WASHINGTON, April 01, 2026--Babel Street, a global leader in mission-grade risk intelligence, today announced it is offering tailored threat intelligence briefings to security leaders across the technology sector immedi…",
+      "newsUrl": "https://finnhub.io/api/news?id=e39acc5a7500a9d0bb2201a4797e68f9a718ff8e772bef76125fb6ce489f6948",
+      "judgement": "依新聞摘要初判：WASHINGTON, April 01, 2026--Babel Street, a global leader in mission-grade risk intelligence, today announced it is offering tailored threat intelligence briefings to security leaders across the technology sector immedi…",
+      "premarket": "最新 175.75 / 前收 174.40 / +0.77%",
+      "openingBias": "利空",
       "observation": "留意 NVDA 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "AMD",
-      "news": "AmberSemi to Exhibit at APEC 2026, Showcasing New PowerTile™ Solutions to Solve AI Data Center Power Problems（Yahoo）",
+      "news": "Zalando s Supervisory Board Nominates AI Pioneer Peter Sarlin to Strengthen AI Leadership and Drive Innovation（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "Amber Semiconductor, Inc. (AmberSemi™), a fabless semiconductor company pioneering the next generation of power management for data centers, announced today its attendance at Applied Power Electronics Expo 2026 (APEC) a…",
-      "newsUrl": "https://finnhub.io/api/news?id=e897ffb134ddedbe6a5ee0fb5ed468079a0a47376cd5e21392ddbc3841fd245f",
-      "judgement": "依新聞摘要初判：Amber Semiconductor, Inc. (AmberSemi™), a fabless semiconductor company pioneering the next generation of power management for data centers, announced today its attendance at Applied Power Electronics Expo 2026 (APEC) a…",
-      "premarket": "資料待接入",
+      "newsSummary": "BERLIN - March 30, 2026 (NEWMEDIAWIRE) - Zalando SE (\"Zalando\") today announced that its supervisory board has proposed the election of Peter Sarlin, a European pioneer in machine learning and artificial intelligence, a…",
+      "newsUrl": "https://finnhub.io/api/news?id=125a267ecff7376378a91669080ee18d952649b49823d6c0592e28591267d0cf",
+      "judgement": "依新聞摘要初判：BERLIN - March 30, 2026 (NEWMEDIAWIRE) - Zalando SE (\"Zalando\") today announced that its supervisory board has proposed the election of Peter Sarlin, a European pioneer in machine learning and artificial intelligence, a…",
+      "premarket": "最新 210.21 / 前收 203.43 / +3.33%",
       "openingBias": "中性",
       "observation": "留意 AMD 是否延續 Yahoo 所反映的市場敘事。"
     }
@@ -37,45 +37,45 @@
   "watch": [
     {
       "symbol": "ETN",
-      "news": "Eaton Unveils Brightlayer Energy, an AI-Powered Energy Management and Optimization Software To Drive New Levels of Efficiency and Flexibili…（Yahoo）",
-      "newsSource": "Yahoo",
-      "newsSummary": "New Brightlayer Energy software delivers automated, dynamic and grid-interactive energy optimization Comprehensive monitoring and reporting for Scope 1 and 2 emissions supports compliance with regional regulatory requir…",
-      "newsUrl": "https://finnhub.io/api/news?id=747b711c7a278f18e3a9a8a0dc81ed05562e82dd57c2241b6f80198e43793d6c",
-      "judgement": "依新聞摘要初判：New Brightlayer Energy software delivers automated, dynamic and grid-interactive energy optimization Comprehensive monitoring and reporting for Scope 1 and 2 emissions supports compliance with regional regulatory requir…",
-      "premarket": "資料待接入",
-      "openingBias": "利空",
-      "observation": "留意 ETN 是否延續 Yahoo 所反映的市場敘事。"
+      "news": "Nebius unveils plans to build one of Europe's largest AI factories as region scrambles for compute（CNBC）",
+      "newsSource": "CNBC",
+      "newsSummary": "Europe is racing to create the infrastructure needed to power the AI boom.",
+      "newsUrl": "https://finnhub.io/api/news?id=9ed33b44ea03f6a760654a2a5e07f5f42cfd1f74aa8718b34ab8566d7fe4cf3a",
+      "judgement": "依新聞摘要初判：Europe is racing to create the infrastructure needed to power the AI boom.",
+      "premarket": "最新 365.56 / 前收 357.67 / +2.21%",
+      "openingBias": "中性",
+      "observation": "留意 ETN 是否延續 CNBC 所反映的市場敘事。"
     },
     {
       "symbol": "GSAT",
-      "news": "今晚沒新聞",
-      "newsSource": "fallback",
-      "newsSummary": "最近沒有抓到可用新聞。",
-      "newsUrl": "",
+      "news": "Shares of space-related companies are trading lower as the stock extends Friday's selloff. NASA readied its two-day countdown ahead of the…（Benzinga）",
+      "newsSource": "Benzinga",
+      "newsSummary": "摘要不足",
+      "newsUrl": "https://finnhub.io/api/news?id=6008a77c331a4e65e82a1f3bc05a8223d0cfef826bafc97aa326902277d6485a",
       "judgement": "待補判讀",
-      "premarket": "資料待接入",
+      "premarket": "最新 68.53 / 前收 66.42 / +3.18%",
       "openingBias": "中性",
-      "observation": "GSAT 暫時以價格與量能為主，等待更多催化。"
+      "observation": "留意 GSAT 是否延續 Benzinga 所反映的市場敘事。"
     },
     {
       "symbol": "ZETA",
-      "news": "今晚沒新聞",
-      "newsSource": "fallback",
-      "newsSummary": "最近沒有抓到可用新聞。",
-      "newsUrl": "",
-      "judgement": "待補判讀",
-      "premarket": "資料待接入",
-      "openingBias": "中性",
-      "observation": "ZETA 暫時以價格與量能為主，等待更多催化。"
+      "news": "Zeta: This Valuation Reset Looks Fair（SeekingAlpha）",
+      "newsSource": "SeekingAlpha",
+      "newsSummary": "Zeta Global Holdings Corp. (ZETA) is rated 'Hold' due to slowing organic growth and integration risks despite strong historical performance.",
+      "newsUrl": "https://finnhub.io/api/news?id=43757aa86c457f41e9016d6638c7fb5d56ab81a69b93c584718a6e2a8bfbb9cd",
+      "judgement": "依新聞摘要初判：Zeta Global Holdings Corp. (ZETA) is rated 'Hold' due to slowing organic growth and integration risks despite strong historical performance.",
+      "premarket": "最新 15.73 / 前收 15.92 / -1.19%",
+      "openingBias": "利多",
+      "observation": "留意 ZETA 是否延續 SeekingAlpha 所反映的市場敘事。"
     },
     {
       "symbol": "RTX",
-      "news": "The U.S. Army’s $20B Anduril Deal Points to Upside for Palantir, Lockheed Martin, and Defense Tech Stocks（Yahoo）",
+      "news": "Update: Market Chatter: Hegseth's Morgan Stanley Broker Looked to Invest in BlackRock Defense Fund Right Before Iran Attack（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "The U.S. Army is reshaping how it works with defense tech firms, and two recent deals help showcase that shift. One is with private firm Anduril, and the other is with Palantir Technologies (PLTR). Together, they point…",
-      "newsUrl": "https://finnhub.io/api/news?id=71be7f7723123a249f75860eefafc826991c8707da03d6d04a5cdc08d4d76ce7",
-      "judgement": "依新聞摘要初判：The U.S. Army is reshaping how it works with defense tech firms, and two recent deals help showcase that shift. One is with private firm Anduril, and the other is with Palantir Technologies (PLTR). Together, they point…",
-      "premarket": "資料待接入",
+      "newsSummary": "(Update with BlackRock's response to a request for comment in the last paragraph.) US Secretary o",
+      "newsUrl": "https://finnhub.io/api/news?id=fc0ebe88e6965931a3942a686abd0f6f771ba6d143506dd78029cc692fd15c34",
+      "judgement": "依新聞摘要初判：(Update with BlackRock's response to a request for comment in the last paragraph.) US Secretary o",
+      "premarket": "最新 194.72 / 前收 192.90 / +0.94%",
       "openingBias": "中性",
       "observation": "留意 RTX 是否延續 Yahoo 所反映的市場敘事。"
     }
@@ -86,7 +86,7 @@
       "AMD",
       "ETN"
     ],
-    "coreView": "先用免費新聞來源建立晚間快報骨架，關鍵決策仍需人工複核。",
+    "coreView": "目前僅使用免費的 Finnhub 與 FRED 來源，關鍵決策仍需人工複核。",
     "highestVolatility": [
       "ETN",
       "GSAT"
