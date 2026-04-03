@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-02T21:00:38.411179+08:00",
+  "generatedAt": "2026-04-03T21:00:32.323037+08:00",
   "overview": {
-    "marketSentiment": "市場情緒待補（VIX 暫時不可用）",
-    "mainTheme": "以個股新聞骨架彙整，宏觀利率資料仍不完整",
-    "riskEvent": "宏觀風險資料暫時不足",
+    "marketSentiment": "待補資料（FRED 暫時不可用）",
+    "mainTheme": "以個股新聞骨架彙整，待補更完整市場主線判讀",
+    "riskEvent": "FRED 資料拉取失敗，宏觀風險欄位維持骨架",
     "focus": [
       "NVDA",
       "AMD",
@@ -13,24 +13,24 @@
   "core": [
     {
       "symbol": "NVDA",
-      "news": "Babel Street Extends Free Real-Time Risk Intelligence to U.S. Tech Companies Operating Across the Middle East Being Targeted by Iran’s Isla…（Yahoo）",
+      "news": "The Best-Performing Vanguard ETF Over the Last Decade Is Issuing an 8-for-1 Stock Split. But Should Investors Be Concerned That 44% of the…（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "WASHINGTON, April 01, 2026--Babel Street, a global leader in mission-grade risk intelligence, today announced it is offering tailored threat intelligence briefings to security leaders across the technology sector immedi…",
-      "newsUrl": "https://finnhub.io/api/news?id=e39acc5a7500a9d0bb2201a4797e68f9a718ff8e772bef76125fb6ce489f6948",
-      "judgement": "依新聞摘要初判：WASHINGTON, April 01, 2026--Babel Street, a global leader in mission-grade risk intelligence, today announced it is offering tailored threat intelligence briefings to security leaders across the technology sector immedi…",
-      "premarket": "最新 175.75 / 前收 174.40 / +0.77%",
-      "openingBias": "利空",
+      "newsSummary": "Betting big on tech stocks has paid off for long-term investors.",
+      "newsUrl": "https://finnhub.io/api/news?id=476ca30d6f8a8dfc2d9f7465fe9cecb2873513c7ae8e36bf3d7de0171d216d33",
+      "judgement": "依新聞摘要初判：Betting big on tech stocks has paid off for long-term investors.",
+      "premarket": "最新 177.39 / 前收 175.75 / +0.93%",
+      "openingBias": "中性",
       "observation": "留意 NVDA 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "AMD",
-      "news": "Zalando s Supervisory Board Nominates AI Pioneer Peter Sarlin to Strengthen AI Leadership and Drive Innovation（Yahoo）",
+      "news": "Advanced Micro Devices (AMD) Is Up 6.7% After New CIQ Partnership Targets Open, Power‑Efficient AI Infrastructure（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "BERLIN - March 30, 2026 (NEWMEDIAWIRE) - Zalando SE (\"Zalando\") today announced that its supervisory board has proposed the election of Peter Sarlin, a European pioneer in machine learning and artificial intelligence, a…",
-      "newsUrl": "https://finnhub.io/api/news?id=125a267ecff7376378a91669080ee18d952649b49823d6c0592e28591267d0cf",
-      "judgement": "依新聞摘要初判：BERLIN - March 30, 2026 (NEWMEDIAWIRE) - Zalando SE (\"Zalando\") today announced that its supervisory board has proposed the election of Peter Sarlin, a European pioneer in machine learning and artificial intelligence, a…",
-      "premarket": "最新 210.21 / 前收 203.43 / +3.33%",
-      "openingBias": "中性",
+      "newsSummary": "In late March 2026, CIQ announced a collaboration with Advanced Micro Devices to deliver AMD-optimized Rocky Linux and integrated software stacks for AI and high‑performance computing workloads running on AMD data cente…",
+      "newsUrl": "https://finnhub.io/api/news?id=d6d957f9ec753ef1c3b9252b63075338a95561f090ffbb5ad7941ef59208778f",
+      "judgement": "依新聞摘要初判：In late March 2026, CIQ announced a collaboration with Advanced Micro Devices to deliver AMD-optimized Rocky Linux and integrated software stacks for AI and high‑performance computing workloads running on AMD data cente…",
+      "premarket": "最新 217.50 / 前收 210.21 / +3.47%",
+      "openingBias": "利多",
       "observation": "留意 AMD 是否延續 Yahoo 所反映的市場敘事。"
     }
   ],
@@ -42,18 +42,18 @@
       "newsSummary": "Europe is racing to create the infrastructure needed to power the AI boom.",
       "newsUrl": "https://finnhub.io/api/news?id=9ed33b44ea03f6a760654a2a5e07f5f42cfd1f74aa8718b34ab8566d7fe4cf3a",
       "judgement": "依新聞摘要初判：Europe is racing to create the infrastructure needed to power the AI boom.",
-      "premarket": "最新 365.56 / 前收 357.67 / +2.21%",
+      "premarket": "最新 361.10 / 前收 365.56 / -1.22%",
       "openingBias": "中性",
       "observation": "留意 ETN 是否延續 CNBC 所反映的市場敘事。"
     },
     {
       "symbol": "GSAT",
-      "news": "Shares of space-related companies are trading lower as the stock extends Friday's selloff. NASA readied its two-day countdown ahead of the…（Benzinga）",
+      "news": "Globalstar Stock Pops More Than 15% After Report Claims Amazon In Talks To Acquire Apple-Backed Satellite Communications Company（Benzinga）",
       "newsSource": "Benzinga",
-      "newsSummary": "摘要不足",
-      "newsUrl": "https://finnhub.io/api/news?id=6008a77c331a4e65e82a1f3bc05a8223d0cfef826bafc97aa326902277d6485a",
-      "judgement": "待補判讀",
-      "premarket": "最新 68.53 / 前收 66.42 / +3.18%",
+      "newsSummary": "Amazon in said to be in talks to acquire Globalstar, boosting shares of the satellite communications company by more than 15%.",
+      "newsUrl": "https://finnhub.io/api/news?id=b2cd24988ecf6f582fa4adab1c99a96a9ad0482fee58bb174052a5abe2ca5638",
+      "judgement": "依新聞摘要初判：Amazon in said to be in talks to acquire Globalstar, boosting shares of the satellite communications company by more than 15%.",
+      "premarket": "最新 77.73 / 前收 68.53 / +13.42%",
       "openingBias": "中性",
       "observation": "留意 GSAT 是否延續 Benzinga 所反映的市場敘事。"
     },
@@ -64,7 +64,7 @@
       "newsSummary": "Zeta Global Holdings Corp. (ZETA) is rated 'Hold' due to slowing organic growth and integration risks despite strong historical performance.",
       "newsUrl": "https://finnhub.io/api/news?id=43757aa86c457f41e9016d6638c7fb5d56ab81a69b93c584718a6e2a8bfbb9cd",
       "judgement": "依新聞摘要初判：Zeta Global Holdings Corp. (ZETA) is rated 'Hold' due to slowing organic growth and integration risks despite strong historical performance.",
-      "premarket": "最新 15.73 / 前收 15.92 / -1.19%",
+      "premarket": "最新 15.79 / 前收 15.73 / +0.38%",
       "openingBias": "利多",
       "observation": "留意 ZETA 是否延續 SeekingAlpha 所反映的市場敘事。"
     },
@@ -75,7 +75,7 @@
       "newsSummary": "(Update with BlackRock's response to a request for comment in the last paragraph.) US Secretary o",
       "newsUrl": "https://finnhub.io/api/news?id=fc0ebe88e6965931a3942a686abd0f6f771ba6d143506dd78029cc692fd15c34",
       "judgement": "依新聞摘要初判：(Update with BlackRock's response to a request for comment in the last paragraph.) US Secretary o",
-      "premarket": "最新 194.72 / 前收 192.90 / +0.94%",
+      "premarket": "最新 196.21 / 前收 194.72 / +0.77%",
       "openingBias": "中性",
       "observation": "留意 RTX 是否延續 Yahoo 所反映的市場敘事。"
     }
