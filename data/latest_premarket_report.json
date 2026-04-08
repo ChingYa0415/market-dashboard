@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-07T21:00:48.446821+08:00",
+  "generatedAt": "2026-04-08T21:00:48.999457+08:00",
   "overview": {
-    "marketSentiment": "市場情緒中性偏保守（VIX 23.87）",
+    "marketSentiment": "市場情緒中性偏保守（VIX 24.17）",
     "mainTheme": "利率曲線較正常，宏觀壓力相對緩和，個股消息面主導",
-    "riskEvent": "VIX 23.87 / 10Y 4.35% / 2Y 3.84% / 利差 +0.51%",
+    "riskEvent": "VIX 24.17 / 10Y 4.34% / 2Y 3.84% / 利差 +0.50%",
     "focus": [
       "NVDA",
       "AMD",
@@ -13,38 +13,38 @@
   "core": [
     {
       "symbol": "NVDA",
-      "news": "Walmart Stock is Sounding a Warning Bell for Investors, and It's Ringing Out at Its Loudest Since the 2008 Financial Crisis. History Paints…（Yahoo）",
+      "news": "Is the AI Gold Rush Over? Costco and Walmart Just Delivered a Sobering $163 Billion Warning to Shareholders of Nvidia, Palantir, and Other…（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "Investors have been worried about the economy and geopolitical factors.",
-      "newsUrl": "https://finnhub.io/api/news?id=91bf5e14744b708c23da770f2a5df20fd901691dcf7f40649e0f1125caf83614",
-      "judgement": "依新聞摘要初判：Investors have been worried about the economy and geopolitical factors.",
-      "premarket": "最新 177.64 / 前收 177.39 / +0.14%",
+      "newsSummary": "Will the current market trend last?",
+      "newsUrl": "https://finnhub.io/api/news?id=ed4b18556b49f3e7089a9e88b77c63803f82cc4655f894e0bc1e2570498120bc",
+      "judgement": "依新聞摘要初判：Will the current market trend last?",
+      "premarket": "最新 178.10 / 前收 177.64 / +0.26%",
       "openingBias": "中性",
       "observation": "留意 NVDA 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "AMD",
-      "news": "The Zacks Analyst Blog Highlights NVIDIA, AMD, Applied Materials, Lam Research and Micron Technology（Yahoo）",
+      "news": "JEDEC® Announces May 2026 Forums Focused on Next-Generation Memory for AI, Server, Cloud, and Mobile Computing（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "Applied Materials and Lam Research surge on AI-driven chip demand, positioning themselves as \"pick-and-shovel\" plays riding the next wave of semiconductor growth.",
-      "newsUrl": "https://finnhub.io/api/news?id=0d07afaf54e2b0378736fd3cee0ca72137b6452bb5922fc6d62c5ec39fc5c6d0",
-      "judgement": "依新聞摘要初判：Applied Materials and Lam Research surge on AI-driven chip demand, positioning themselves as \"pick-and-shovel\" plays riding the next wave of semiconductor growth.",
-      "premarket": "最新 220.18 / 前收 217.50 / +1.23%",
-      "openingBias": "利多",
+      "newsSummary": "ARLINGTON, Va., April 07, 2026--JEDEC Solid State Technology Association, the global leader in the development of standards for the microelectronics industry, today announced that it is hosting a Mobile/Client/Edge Foru…",
+      "newsUrl": "https://finnhub.io/api/news?id=c3a99003e1ffc37a34c49c77b0f060705a7834eadc87bfeba06d95204f7fcb59",
+      "judgement": "依新聞摘要初判：ARLINGTON, Va., April 07, 2026--JEDEC Solid State Technology Association, the global leader in the development of standards for the microelectronics industry, today announced that it is hosting a Mobile/Client/Edge Foru…",
+      "premarket": "最新 221.53 / 前收 220.18 / +0.61%",
+      "openingBias": "中性",
       "observation": "留意 AMD 是否延續 Yahoo 所反映的市場敘事。"
     }
   ],
   "watch": [
     {
       "symbol": "ETN",
-      "news": "Eaton Insiders Sold US$22m Of Shares Suggesting Hesitancy（Yahoo）",
-      "newsSource": "Yahoo",
-      "newsSummary": "The fact that multiple Eaton Corporation plc ( NYSE:ETN ) insiders offloaded a considerable amount of shares over the...",
-      "newsUrl": "https://finnhub.io/api/news?id=6299b374f97843ac33f3d4d0c243d4da0f4ba4dc641e9271317103dd39b123f6",
-      "judgement": "依新聞摘要初判：The fact that multiple Eaton Corporation plc ( NYSE:ETN ) insiders offloaded a considerable amount of shares over the...",
-      "premarket": "最新 363.89 / 前收 361.10 / +0.77%",
+      "news": "今晚沒新聞",
+      "newsSource": "fallback",
+      "newsSummary": "最近沒有抓到可用新聞。",
+      "newsUrl": "",
+      "judgement": "待補判讀",
+      "premarket": "最新 368.85 / 前收 363.89 / +1.36%",
       "openingBias": "中性",
-      "observation": "留意 ETN 是否延續 Yahoo 所反映的市場敘事。"
+      "observation": "ETN 暫時以價格與量能為主，等待更多催化。"
     },
     {
       "symbol": "GSAT",
@@ -53,31 +53,31 @@
       "newsSummary": "This week&#39;s tech news highlights Apple and Nvidia outperforming defense stocks, Amazon&#39;s satellite ambitions, and Apple&#39;s 50th anniversary.",
       "newsUrl": "https://finnhub.io/api/news?id=359879d64d7412ce4cb1e2188eee0ed580b884f412ccce4d4a9fb80f0a3984ad",
       "judgement": "依新聞摘要初判：This week&#39;s tech news highlights Apple and Nvidia outperforming defense stocks, Amazon&#39;s satellite ambitions, and Apple&#39;s 50th anniversary.",
-      "premarket": "最新 72.66 / 前收 77.73 / -6.52%",
+      "premarket": "最新 73.85 / 前收 72.66 / +1.64%",
       "openingBias": "中性",
       "observation": "留意 GSAT 是否延續 Benzinga 所反映的市場敘事。"
     },
     {
       "symbol": "ZETA",
-      "news": "今晚沒新聞",
-      "newsSource": "fallback",
-      "newsSummary": "最近沒有抓到可用新聞。",
-      "newsUrl": "",
+      "news": "10 Information Technology Stocks Whale Activity In Today's Session（Benzinga）",
+      "newsSource": "Benzinga",
+      "newsSummary": "摘要不足",
+      "newsUrl": "https://finnhub.io/api/news?id=8c1aa363e5646f75fa72e23b25fb6eec0707807020ee57efc972a7b0b76cd40b",
       "judgement": "待補判讀",
-      "premarket": "最新 15.81 / 前收 15.79 / +0.13%",
+      "premarket": "最新 15.72 / 前收 15.81 / -0.57%",
       "openingBias": "中性",
-      "observation": "ZETA 暫時以價格與量能為主，等待更多催化。"
+      "observation": "留意 ZETA 是否延續 Benzinga 所反映的市場敘事。"
     },
     {
       "symbol": "RTX",
-      "news": "Trump vows Iran will be 'living in Hell' by Tuesday if Strait of Hormuz deadline missed（CNBC）",
-      "newsSource": "CNBC",
-      "newsSummary": "\"Tuesday will be Power Plant Day, and Bridge Day, all wrapped up in one, in Iran. There will be nothing like it!!!\" Trump said in a Truth Social post.",
-      "newsUrl": "https://finnhub.io/api/news?id=d89d9a74599acd043eb1e4df9f2d60eb2e6367d27b65424bcd91e019bdaa3510",
-      "judgement": "依新聞摘要初判：\"Tuesday will be Power Plant Day, and Bridge Day, all wrapped up in one, in Iran. There will be nothing like it!!!\" Trump said in a Truth Social post.",
-      "premarket": "最新 198.41 / 前收 196.21 / +1.12%",
-      "openingBias": "利空",
-      "observation": "留意 RTX 是否延續 CNBC 所反映的市場敘事。"
+      "news": "RTX Corporation (RTX) Secures $3.8 Billion Contract Modification for Lots 18-19 of F135 Engine（Yahoo）",
+      "newsSource": "Yahoo",
+      "newsSummary": "RTX Corporation (NYSE:RTX) is among the 12 Best Aerospace Stocks to Buy Right Now. On March 31, the company announced that its Pratt & Whitney business had secured a $3.8 billion contract modification for lots 18-19 of…",
+      "newsUrl": "https://finnhub.io/api/news?id=0207ac18ff95f0ba7ff7c66a72629213552fc3e98d6c2b54b4047a2e46b85524",
+      "judgement": "依新聞摘要初判：RTX Corporation (NYSE:RTX) is among the 12 Best Aerospace Stocks to Buy Right Now. On March 31, the company announced that its Pratt & Whitney business had secured a $3.8 billion contract modification for lots 18-19 of…",
+      "premarket": "最新 197.92 / 前收 198.41 / -0.25%",
+      "openingBias": "中性",
+      "observation": "留意 RTX 是否延續 Yahoo 所反映的市場敘事。"
     }
   ],
   "actionSummary": {
