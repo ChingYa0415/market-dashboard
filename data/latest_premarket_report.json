@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-09T21:00:48.873505+08:00",
+  "generatedAt": "2026-04-10T21:00:51.061273+08:00",
   "overview": {
-    "marketSentiment": "風險偏好偏弱（VIX 25.78）",
+    "marketSentiment": "市場情緒中性偏保守（VIX 21.04）",
     "mainTheme": "以個股新聞骨架彙整，宏觀利率資料仍不完整",
-    "riskEvent": "VIX 25.78",
+    "riskEvent": "VIX 21.04",
     "focus": [
       "NVDA",
       "AMD",
@@ -13,12 +13,12 @@
   "core": [
     {
       "symbol": "NVDA",
-      "news": "Anthropic's Claude Mythos Preview Just Sent Shockwaves Through the Cybersecurity Industry. It's Now Joining Forces with Nvidia, Amazon, App…（Yahoo）",
+      "news": "HYPERTEC'S CIARA DIVISION BECOMES FIRST CANADIAN NVIDIA OEM PARTNER MANUFACTURING SYSTEMS IN CANADA, UNLOCKING A MULTI-BILLION-DOLLAR LEAP…（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "Anthropics latest frontier model identified vulnerabilities in every major operating system and web browser.",
-      "newsUrl": "https://finnhub.io/api/news?id=4ad5be74f027d98aceb7cf3e693220853469a9a25c962b5b5eba1e5e546a25d7",
-      "judgement": "依新聞摘要初判：Anthropics latest frontier model identified vulnerabilities in every major operating system and web browser.",
-      "premarket": "最新 182.08 / 前收 178.10 / +2.23%",
+      "newsSummary": "Ciara Technologies, a division of the Hypertec Group and a Canadian global leader in sustainable AI infrastructure and advanced data-center technology, announced today that it has been officially designated as the first…",
+      "newsUrl": "https://finnhub.io/api/news?id=dd33f504e13195a486a759dae968afb4b47a2d5b6c9aef2fd54782bc02925411",
+      "judgement": "依新聞摘要初判：Ciara Technologies, a division of the Hypertec Group and a Canadian global leader in sustainable AI infrastructure and advanced data-center technology, announced today that it has been officially designated as the first…",
+      "premarket": "最新 183.91 / 前收 182.08 / +1.01%",
       "openingBias": "中性",
       "observation": "留意 NVDA 是否延續 Yahoo 所反映的市場敘事。"
     },
@@ -29,7 +29,7 @@
       "newsSummary": "ARLINGTON, Va., April 07, 2026--JEDEC Solid State Technology Association, the global leader in the development of standards for the microelectronics industry, today announced that it is hosting a Mobile/Client/Edge Foru…",
       "newsUrl": "https://finnhub.io/api/news?id=c3a99003e1ffc37a34c49c77b0f060705a7834eadc87bfeba06d95204f7fcb59",
       "judgement": "依新聞摘要初判：ARLINGTON, Va., April 07, 2026--JEDEC Solid State Technology Association, the global leader in the development of standards for the microelectronics industry, today announced that it is hosting a Mobile/Client/Edge Foru…",
-      "premarket": "最新 231.82 / 前收 221.53 / +4.64%",
+      "premarket": "最新 236.64 / 前收 231.82 / +2.08%",
       "openingBias": "中性",
       "observation": "留意 AMD 是否延續 Yahoo 所反映的市場敘事。"
     }
@@ -37,36 +37,36 @@
   "watch": [
     {
       "symbol": "ETN",
-      "news": "Eaton Expands Operations in Nebraska with New Manufacturing Facility to Meet Increasing Switchgear Demand Driven by AI Data Center Boom（Yahoo）",
+      "news": "Global Low Voltage DC Circuit Breaker Market Size/Share Worth USD 9.14 Billion by 2035 at a 9.5% CAGR: Custom Market Insights (Analysis, Ou…（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "PITTSBURGH, April 08, 2026--Intelligent power management company Eaton today announced an investment of over $30 million to increase U.S. production of its medium-voltage switchgear, the equipment used to protect, contr…",
-      "newsUrl": "https://finnhub.io/api/news?id=3c508edc45869cd181616c4928fd5ee7ba51ad8ed3c90339ea8f5b96c345e4bb",
-      "judgement": "依新聞摘要初判：PITTSBURGH, April 08, 2026--Intelligent power management company Eaton today announced an investment of over $30 million to increase U.S. production of its medium-voltage switchgear, the equipment used to protect, contr…",
-      "premarket": "最新 385.58 / 前收 368.85 / +4.54%",
+      "newsSummary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Low Voltage DC Circuit Breaker Market size & share revenue was valued at approximately U…",
+      "newsUrl": "https://finnhub.io/api/news?id=64faeeefd1ccee646cf15e906b0f8380956f79151d07922abdcc8526674de687",
+      "judgement": "依新聞摘要初判：[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Low Voltage DC Circuit Breaker Market size & share revenue was valued at approximately U…",
+      "premarket": "最新 400.44 / 前收 385.58 / +3.85%",
       "openingBias": "中性",
       "observation": "留意 ETN 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "GSAT",
-      "news": "Apple Before Q2: Weaponizing Memory Shortages And The Globalstar Acquisition（SeekingAlpha）",
-      "newsSource": "SeekingAlpha",
-      "newsSummary": "Apple hit a record $143B revenue on iPhone 17 strength, but valuation looks stretched. Click for this updated look at AAPL stock ahead of upcoming earnings.",
-      "newsUrl": "https://finnhub.io/api/news?id=fc7132645c9818175415034d707c2318dcc66e3e3bee1cf0a08432b3659efe37",
-      "judgement": "依新聞摘要初判：Apple hit a record $143B revenue on iPhone 17 strength, but valuation looks stretched. Click for this updated look at AAPL stock ahead of upcoming earnings.",
-      "premarket": "最新 74.91 / 前收 73.85 / +1.44%",
-      "openingBias": "利多",
-      "observation": "留意 GSAT 是否延續 SeekingAlpha 所反映的市場敘事。"
+      "news": "FCC To Vote On Order To Modernize Its Satellite Spectrum-Sharing Rules, May Offer Up To Seven-Fold More Capacity For Space-Based Broadband…（Benzinga）",
+      "newsSource": "Benzinga",
+      "newsSummary": "https://www.fcc.gov/document/fcc-poised-empower-super-fast-space-based-broadband",
+      "newsUrl": "https://finnhub.io/api/news?id=96b0260f62b2a4ef70064ec8f618759b86a4d2528a8d685d5991d0b6f1b34fb8",
+      "judgement": "依新聞摘要初判：https://www.fcc.gov/document/fcc-poised-empower-super-fast-space-based-broadband",
+      "premarket": "最新 73.13 / 前收 74.91 / -2.38%",
+      "openingBias": "中性",
+      "observation": "留意 GSAT 是否延續 Benzinga 所反映的市場敘事。"
     },
     {
       "symbol": "ZETA",
-      "news": "10 Information Technology Stocks Whale Activity In Today's Session（Benzinga）",
-      "newsSource": "Benzinga",
-      "newsSummary": "摘要不足",
-      "newsUrl": "https://finnhub.io/api/news?id=8c1aa363e5646f75fa72e23b25fb6eec0707807020ee57efc972a7b0b76cd40b",
+      "news": "今晚沒新聞",
+      "newsSource": "fallback",
+      "newsSummary": "最近沒有抓到可用新聞。",
+      "newsUrl": "",
       "judgement": "待補判讀",
-      "premarket": "最新 15.72 / 前收 15.72 / +0.00%",
+      "premarket": "最新 15.32 / 前收 15.72 / -2.54%",
       "openingBias": "中性",
-      "observation": "留意 ZETA 是否延續 Benzinga 所反映的市場敘事。"
+      "observation": "ZETA 暫時以價格與量能為主，等待更多催化。"
     },
     {
       "symbol": "RTX",
@@ -75,7 +75,7 @@
       "newsSummary": "The defense major is one of the major players for the US in the Middle East war.",
       "newsUrl": "https://finnhub.io/api/news?id=d1773175729697b271e0b3de9676592da06a334a64bd813d6191dfda4c08b909",
       "judgement": "依新聞摘要初判：The defense major is one of the major players for the US in the Middle East war.",
-      "premarket": "最新 203.48 / 前收 197.92 / +2.81%",
+      "premarket": "最新 203.19 / 前收 203.48 / -0.14%",
       "openingBias": "中性",
       "observation": "留意 RTX 是否延續 Yahoo 所反映的市場敘事。"
     }
