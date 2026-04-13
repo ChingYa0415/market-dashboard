@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-10T21:00:51.061273+08:00",
+  "generatedAt": "2026-04-13T21:00:46.049388+08:00",
   "overview": {
-    "marketSentiment": "市場情緒中性偏保守（VIX 21.04）",
+    "marketSentiment": "市場情緒中性偏保守（VIX 19.49）",
     "mainTheme": "以個股新聞骨架彙整，宏觀利率資料仍不完整",
-    "riskEvent": "VIX 21.04",
+    "riskEvent": "VIX 19.49",
     "focus": [
       "NVDA",
       "AMD",
@@ -13,23 +13,23 @@
   "core": [
     {
       "symbol": "NVDA",
-      "news": "HYPERTEC'S CIARA DIVISION BECOMES FIRST CANADIAN NVIDIA OEM PARTNER MANUFACTURING SYSTEMS IN CANADA, UNLOCKING A MULTI-BILLION-DOLLAR LEAP…（Yahoo）",
+      "news": "Amazon Has Become an E-commerce and Cloud Computing Behemoth. Now It's Set Its Sights on Another Billion-Dollar Market. And It Could Spell…（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "Ciara Technologies, a division of the Hypertec Group and a Canadian global leader in sustainable AI infrastructure and advanced data-center technology, announced today that it has been officially designated as the first…",
-      "newsUrl": "https://finnhub.io/api/news?id=dd33f504e13195a486a759dae968afb4b47a2d5b6c9aef2fd54782bc02925411",
-      "judgement": "依新聞摘要初判：Ciara Technologies, a division of the Hypertec Group and a Canadian global leader in sustainable AI infrastructure and advanced data-center technology, announced today that it has been officially designated as the first…",
-      "premarket": "最新 183.91 / 前收 182.08 / +1.01%",
+      "newsSummary": "Amazon and Nvidia are both key players in the AI space today.",
+      "newsUrl": "https://finnhub.io/api/news?id=1863bfda3813682b2169964f8ef39fb0a91c2ea376cdcbbb4d76ef6a3ec3e0c0",
+      "judgement": "依新聞摘要初判：Amazon and Nvidia are both key players in the AI space today.",
+      "premarket": "最新 188.63 / 前收 183.91 / +2.57%",
       "openingBias": "中性",
       "observation": "留意 NVDA 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "AMD",
-      "news": "JEDEC® Announces May 2026 Forums Focused on Next-Generation Memory for AI, Server, Cloud, and Mobile Computing（Yahoo）",
+      "news": "Taiwan Semiconductor Manufacturing (TSM): The Best Under-The-Radar AI Stock in Billionaire Ken Fisher’s Portfolio?（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "ARLINGTON, Va., April 07, 2026--JEDEC Solid State Technology Association, the global leader in the development of standards for the microelectronics industry, today announced that it is hosting a Mobile/Client/Edge Foru…",
-      "newsUrl": "https://finnhub.io/api/news?id=c3a99003e1ffc37a34c49c77b0f060705a7834eadc87bfeba06d95204f7fcb59",
-      "judgement": "依新聞摘要初判：ARLINGTON, Va., April 07, 2026--JEDEC Solid State Technology Association, the global leader in the development of standards for the microelectronics industry, today announced that it is hosting a Mobile/Client/Edge Foru…",
-      "premarket": "最新 236.64 / 前收 231.82 / +2.08%",
+      "newsSummary": "We just covered Billionaire Ken Fisher’s Latest Portfolio: 10 Best AI Stocks to Buy. Taiwan Semiconductor Manufacturing Company Limited (NYSE:TSM) ranks #6 (see the 5 Best AI Stocks to Buy). Billionaire Ken Fisher’s Sta…",
+      "newsUrl": "https://finnhub.io/api/news?id=3d9fe8508efab7a5b63dcdb7f4510ed001c46767d3f6e5afc53539f49421c0a9",
+      "judgement": "依新聞摘要初判：We just covered Billionaire Ken Fisher’s Latest Portfolio: 10 Best AI Stocks to Buy. Taiwan Semiconductor Manufacturing Company Limited (NYSE:TSM) ranks #6 (see the 5 Best AI Stocks to Buy). Billionaire Ken Fisher’s Sta…",
+      "premarket": "最新 245.04 / 前收 236.64 / +3.55%",
       "openingBias": "中性",
       "observation": "留意 AMD 是否延續 Yahoo 所反映的市場敘事。"
     }
@@ -37,25 +37,25 @@
   "watch": [
     {
       "symbol": "ETN",
-      "news": "Global Low Voltage DC Circuit Breaker Market Size/Share Worth USD 9.14 Billion by 2035 at a 9.5% CAGR: Custom Market Insights (Analysis, Ou…（Yahoo）",
+      "news": "Assessing Eaton (ETN) Valuation After Strong Recent Share Price Performance（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Low Voltage DC Circuit Breaker Market size & share revenue was valued at approximately U…",
-      "newsUrl": "https://finnhub.io/api/news?id=64faeeefd1ccee646cf15e906b0f8380956f79151d07922abdcc8526674de687",
-      "judgement": "依新聞摘要初判：[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Low Voltage DC Circuit Breaker Market size & share revenue was valued at approximately U…",
-      "premarket": "最新 400.44 / 前收 385.58 / +3.85%",
-      "openingBias": "中性",
+      "newsSummary": "What recent performance says about Eaton (ETN) for investors Eaton (ETN) has drawn attention after recent share gains, with the stock up about 4% over the past day, 11% over the past week, and similar moves over the pas…",
+      "newsUrl": "https://finnhub.io/api/news?id=1918391513b4c4eac42411b28cc7062334283801c1536a3088eb711fe987269e",
+      "judgement": "依新聞摘要初判：What recent performance says about Eaton (ETN) for investors Eaton (ETN) has drawn attention after recent share gains, with the stock up about 4% over the past day, 11% over the past week, and similar moves over the pas…",
+      "premarket": "最新 403.00 / 前收 400.44 / +0.64%",
+      "openingBias": "利多",
       "observation": "留意 ETN 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "GSAT",
-      "news": "FCC To Vote On Order To Modernize Its Satellite Spectrum-Sharing Rules, May Offer Up To Seven-Fold More Capacity For Space-Based Broadband…（Benzinga）",
-      "newsSource": "Benzinga",
-      "newsSummary": "https://www.fcc.gov/document/fcc-poised-empower-super-fast-space-based-broadband",
-      "newsUrl": "https://finnhub.io/api/news?id=96b0260f62b2a4ef70064ec8f618759b86a4d2528a8d685d5991d0b6f1b34fb8",
-      "judgement": "依新聞摘要初判：https://www.fcc.gov/document/fcc-poised-empower-super-fast-space-based-broadband",
-      "premarket": "最新 73.13 / 前收 74.91 / -2.38%",
+      "news": "今晚沒新聞",
+      "newsSource": "fallback",
+      "newsSummary": "最近沒有抓到可用新聞。",
+      "newsUrl": "",
+      "judgement": "待補判讀",
+      "premarket": "最新 73.16 / 前收 73.13 / +0.04%",
       "openingBias": "中性",
-      "observation": "留意 GSAT 是否延續 Benzinga 所反映的市場敘事。"
+      "observation": "GSAT 暫時以價格與量能為主，等待更多催化。"
     },
     {
       "symbol": "ZETA",
@@ -64,18 +64,18 @@
       "newsSummary": "最近沒有抓到可用新聞。",
       "newsUrl": "",
       "judgement": "待補判讀",
-      "premarket": "最新 15.32 / 前收 15.72 / -2.54%",
+      "premarket": "最新 14.61 / 前收 15.32 / -4.63%",
       "openingBias": "中性",
       "observation": "ZETA 暫時以價格與量能為主，等待更多催化。"
     },
     {
       "symbol": "RTX",
-      "news": "Lockheed Martin Stock Is Up 30% in 2026 and Yields 2%. Is It a Top Buy While the Iran War Drags On?（Yahoo）",
+      "news": "Middle East Ceasefire Eases Tensions, but Defense Stocks Stay in Focus – 2 Picks Analysts Like（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "The defense major is one of the major players for the US in the Middle East war.",
-      "newsUrl": "https://finnhub.io/api/news?id=d1773175729697b271e0b3de9676592da06a334a64bd813d6191dfda4c08b909",
-      "judgement": "依新聞摘要初判：The defense major is one of the major players for the US in the Middle East war.",
-      "premarket": "最新 203.19 / 前收 203.48 / -0.14%",
+      "newsSummary": "After weeks of escalating tension, the U.S. and Iran have finally reached a ceasefire, easing fears of a broader regional conflict and giving markets a much-needed breather. Now, with hostilities paused, there is at lea…",
+      "newsUrl": "https://finnhub.io/api/news?id=9a8d71ef70d1ee27d699027ba5acd43660bbf21ce3b5ce0cd265708caa0a2fa7",
+      "judgement": "依新聞摘要初判：After weeks of escalating tension, the U.S. and Iran have finally reached a ceasefire, easing fears of a broader regional conflict and giving markets a much-needed breather. Now, with hostilities paused, there is at lea…",
+      "premarket": "最新 201.56 / 前收 203.19 / -0.80%",
       "openingBias": "中性",
       "observation": "留意 RTX 是否延續 Yahoo 所反映的市場敘事。"
     }
