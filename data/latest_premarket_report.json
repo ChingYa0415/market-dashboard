@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-14T21:00:52.218558+08:00",
+  "generatedAt": "2026-04-15T21:00:44.457121+08:00",
   "overview": {
-    "marketSentiment": "市場情緒中性偏保守（VIX 19.23）",
+    "marketSentiment": "市場情緒中性偏保守（VIX 19.12）",
     "mainTheme": "以個股新聞骨架彙整，宏觀利率資料仍不完整",
-    "riskEvent": "VIX 19.23",
+    "riskEvent": "VIX 19.12",
     "focus": [
       "NVDA",
       "AMD",
@@ -18,55 +18,55 @@
       "newsSummary": "Earnings at this AI company are roaring higher.",
       "newsUrl": "https://finnhub.io/api/news?id=d731acc1e76381460e777e796faf6dac7afe13c7702d2b4037ea7cc0a61c946f",
       "judgement": "依新聞摘要初判：Earnings at this AI company are roaring higher.",
-      "premarket": "最新 189.31 / 前收 188.63 / +0.36%",
+      "premarket": "最新 196.51 / 前收 189.31 / +3.80%",
       "openingBias": "中性",
       "observation": "留意 NVDA 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "AMD",
-      "news": "Zacks Industry Outlook Highlights Micron Technology, Advanced Micro Devices, Hewlett Packard and Agilysys（Yahoo）",
+      "news": "This Super Stock Could Be the Biggest Winner in the AI Inference Economy. It Isn't Nvidia, Broadcom, Intel, or AMD.（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "MU powers ahead as AI-driven demand fuels record growth, leading a surging integrated systems industry alongside AMD, HPE and AGYS.",
-      "newsUrl": "https://finnhub.io/api/news?id=5a7aa26b63634d44db8f0e253cc52503d475b0a38deff0de908126fb0aa3dd75",
-      "judgement": "依新聞摘要初判：MU powers ahead as AI-driven demand fuels record growth, leading a surging integrated systems industry alongside AMD, HPE and AGYS.",
-      "premarket": "最新 246.83 / 前收 245.04 / +0.73%",
-      "openingBias": "利多",
+      "newsSummary": "In the next phase of the AI megatrend, inference will be the big focus, and Arm Holdings is poised to win big from that shift.",
+      "newsUrl": "https://finnhub.io/api/news?id=e519a4db3a71c804038056750dfd983f94b33f90911a0cdc16e890495cff6f60",
+      "judgement": "依新聞摘要初判：In the next phase of the AI megatrend, inference will be the big focus, and Arm Holdings is poised to win big from that shift.",
+      "premarket": "最新 255.07 / 前收 246.83 / +3.34%",
+      "openingBias": "中性",
       "observation": "留意 AMD 是否延續 Yahoo 所反映的市場敘事。"
     }
   ],
   "watch": [
     {
       "symbol": "ETN",
-      "news": "Zacks Industry Outlook Highlights Eaton, Emerson Electric, Powell Industries and EnerSys（Yahoo）",
+      "news": "Eaton Earns Prestigious Gold Medal Rating From EcoVadis for Sustainability Management Maturity（Yahoo）",
       "newsSource": "Yahoo",
-      "newsSummary": "Eaton gains from AI data center demand as select electronics manufacturers outperform despite rising costs, supply-chain issues, and weak industry outlook.",
-      "newsUrl": "https://finnhub.io/api/news?id=1bc8efb0701ce8657ce9fd0e0561176ce4eab6b5eca711d092587a434918e982",
-      "judgement": "依新聞摘要初判：Eaton gains from AI data center demand as select electronics manufacturers outperform despite rising costs, supply-chain issues, and weak industry outlook.",
-      "premarket": "最新 403.36 / 前收 403.00 / +0.09%",
-      "openingBias": "利空",
+      "newsSummary": "DUBLIN, April 15, 2026--Intelligent power management company Eaton has achieved a gold medal from EcoVadis, the world’s largest provider of business sustainability ratings. The EcoVadis evaluation measures performance a…",
+      "newsUrl": "https://finnhub.io/api/news?id=93980de931c94cee6f3a9ece0badc17625ee4343a54ca2cb8ef5ab8eb1124c46",
+      "judgement": "依新聞摘要初判：DUBLIN, April 15, 2026--Intelligent power management company Eaton has achieved a gold medal from EcoVadis, the world’s largest provider of business sustainability ratings. The EcoVadis evaluation measures performance a…",
+      "premarket": "最新 401.90 / 前收 403.36 / -0.36%",
+      "openingBias": "中性",
       "observation": "留意 ETN 是否延續 Yahoo 所反映的市場敘事。"
     },
     {
       "symbol": "GSAT",
-      "news": "Wall Street Breakfast Podcast: PC Rally Fades On Nvidia Denial（SeekingAlpha）",
-      "newsSource": "SeekingAlpha",
-      "newsSummary": "PC stocks fall after Nvidia denies report in talks to buy a PC-focused company. United CEO teases interest in merger with American. Amazon said to be in advanced talks on Globalstar deal.",
-      "newsUrl": "https://finnhub.io/api/news?id=5a34c2bd706807f8f41040cb54688c0d99c21f9298a217d144df47c5594be462",
-      "judgement": "依新聞摘要初判：PC stocks fall after Nvidia denies report in talks to buy a PC-focused company. United CEO teases interest in merger with American. Amazon said to be in advanced talks on Globalstar deal.",
-      "premarket": "最新 72.89 / 前收 73.16 / -0.37%",
+      "news": "Citron Research Posts Bullish Comments On Amazon Acquisition Of Globalstar, Says \"$AMZN Trading at 30x earnings against a 5-year average P/…（Benzinga）",
+      "newsSource": "Benzinga",
+      "newsSummary": "https://x.com/CitronResearch/status/2044035387857809555",
+      "newsUrl": "https://finnhub.io/api/news?id=483cd6c341e9258dbc9153e3c0916cd41aeefa7329749f4da05a9fbb2459b4e3",
+      "judgement": "依新聞摘要初判：https://x.com/CitronResearch/status/2044035387857809555",
+      "premarket": "最新 79.91 / 前收 72.89 / +9.63%",
       "openingBias": "中性",
-      "observation": "留意 GSAT 是否延續 SeekingAlpha 所反映的市場敘事。"
+      "observation": "留意 GSAT 是否延續 Benzinga 所反映的市場敘事。"
     },
     {
       "symbol": "ZETA",
-      "news": "今晚沒新聞",
-      "newsSource": "fallback",
-      "newsSummary": "最近沒有抓到可用新聞。",
-      "newsUrl": "",
+      "news": "Shares of software-related companies are trading higher as the sector rebounds from a recent selloff, with investors stepping back in after…（Benzinga）",
+      "newsSource": "Benzinga",
+      "newsSummary": "摘要不足",
+      "newsUrl": "https://finnhub.io/api/news?id=91650f5163ff6f1c4a81834b16855d7bdab8e9dbf276870e20d98b600181770e",
       "judgement": "待補判讀",
-      "premarket": "最新 15.63 / 前收 14.61 / +6.98%",
+      "premarket": "最新 16.20 / 前收 15.63 / +3.65%",
       "openingBias": "中性",
-      "observation": "ZETA 暫時以價格與量能為主，等待更多催化。"
+      "observation": "留意 ZETA 是否延續 Benzinga 所反映的市場敘事。"
     },
     {
       "symbol": "RTX",
@@ -75,7 +75,7 @@
       "newsSummary": "Collins Aerospace, an RTX (NYSE: RTX) business, and Air Canada today announced that the carrier's new fleet of Airbus A321XLR aircraft will be furnished entirely with Collins' seating solutions. Fourteen premium Aurora…",
       "newsUrl": "https://finnhub.io/api/news?id=8efbd7e2042e43627c217e4747afbc21e6c1c7d54bdd1010162b1183ebd41752",
       "judgement": "依新聞摘要初判：Collins Aerospace, an RTX (NYSE: RTX) business, and Air Canada today announced that the carrier's new fleet of Airbus A321XLR aircraft will be furnished entirely with Collins' seating solutions. Fourteen premium Aurora…",
-      "premarket": "最新 201.41 / 前收 201.56 / -0.07%",
+      "premarket": "最新 202.81 / 前收 201.41 / +0.70%",
       "openingBias": "中性",
       "observation": "留意 RTX 是否延續 Yahoo 所反映的市場敘事。"
     }
