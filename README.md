@@ -1,32 +1,38 @@
-# Market Dashboard
+# Premarket Discord Bot Workspace
 
-本機用的看盤網站骨架。先用靜態檔與 mock data 起步，之後可以逐步接上即時行情、個人策略、後端 API 或資料庫。
+這個專案現在只負責兩件事：
 
-## 快速啟動
+1. 生成每日美股盤前簡報
+2. 將簡報內容發送到 Discord
 
-在專案根目錄執行：
+不再維護任何網站前端或 GitHub Pages 站點。
+
+## 核心流程
+
+- `scripts/generate_premarket_report.py`
+  讀取設定、抓資料、生成最新 JSON / Markdown 報告。
+- `scripts/run_generate_premarket_report.sh`
+  nightly cron 的固定入口。
+- `scripts/run_premarket_report.py`
+  手動生成簡報並透過 webhook 發送 Discord。
+- `scripts/send_to_discord.py`
+  單純的 Discord webhook 發送工具。
+
+## 主要輸出
+
+- `data/latest_premarket_report.json`
+- `reports/latest_premarket_report.md`
+
+## 手動測試
+
+生成最新報告：
 
 ```bash
-python3 -m http.server 4173
+./scripts/run_generate_premarket_report.sh
 ```
 
-然後打開：
+手動生成並發送到 Discord：
 
-```text
-http://localhost:4173
+```bash
+.venv/bin/python scripts/run_premarket_report.py
 ```
-
-## 專案結構
-
-- `index.html`: 首頁版型
-- `assets/styles.css`: 視覺樣式
-- `assets/app.js`: 前端邏輯與渲染
-- `data/watchlist.json`: mock 市場資料
-- `AGENTS.md`: 給 OpenClaw 的專案操作規則
-
-## 下一步可以做什麼
-
-1. 把 `data/watchlist.json` 換成你自己的觀察清單。
-2. 接上真實 API，例如股票、加密貨幣或匯率資料源。
-3. 增加歷史走勢、成交量、持倉、風險控管與事件行事曆。
-4. 把筆記或提醒改成寫入後端，而不是只存在瀏覽器 localStorage。

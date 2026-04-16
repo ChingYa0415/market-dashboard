@@ -1,44 +1,33 @@
-# Market Dashboard Workspace
+# Premarket Discord Workspace
 
-這個 workspace 的主要目的只有一個：維護 `market-dashboard` 網站。
+這個 workspace 的主要目的只有一個：生成美股盤前簡報並發送到 Discord。
 
 ## 工作範圍
 
-- 只修改這個 workspace 內的網站檔案。
+- 優先維護盤前簡報生成流程、報告輸出與 Discord 發送邏輯。
+- 不再維護網站前端、GitHub Pages 或靜態首頁。
 - 預設不要觸碰其他資料夾、系統設定或使用者私人檔案。
-- 除非使用者明確要求，先維持「本機靜態網站 + mock data」結構。
 
 ## 修改原則
 
 - 先做小步、可驗證的改動。
-- 優先保留可讀性，不要為了炫技把前端寫得太複雜。
-- 若要引入外部 API、資料庫、登入、排程或交易行為，先說明風險再動手。
+- 優先保持資料流程清楚、輸出穩定、錯誤可追蹤。
+- 若要引入新的資料來源、排程、推送管道或憑證機制，先說明風險再動手。
 - 不要把任何 token、API key、憑證寫進 repo。
 
-## 啟動方式
+## 主要檔案
 
-```bash
-python3 -m http.server 4173
-```
-
-注意：
-
-- `python3` 只用於本機預覽靜態網站，不是新增、修改、刪除檔案的前提。
-- 只要 `write`、`edit`、`apply_patch` 等工具可用，就應直接操作網站檔案。
-- 不要因為缺少 `python3` 就宣稱無法建立或修改網站檔案。
-
-## 目前網站重點
-
-- 市場概況卡片
-- 追蹤清單表格
-- 強弱勢排行
-- 策略提醒
-- 今日劇本
-- 盤中筆記
+- `config/premarket_report.json`: 簡報輸入設定
+- `scripts/generate_premarket_report.py`: 生成最新 JSON / Markdown 報告
+- `scripts/run_generate_premarket_report.sh`: nightly cron 使用的固定入口
+- `scripts/run_premarket_report.py`: 手動生成並發送 Discord 的入口
+- `scripts/send_to_discord.py`: Discord webhook 發送工具
+- `data/latest_premarket_report.json`: 最新結構化報告
+- `reports/latest_premarket_report.md`: 最新 Markdown 簡報
 
 ## 互動習慣
 
-- 如果使用者從 Discord 下指令，預設理解成要修改這個網站。
-- 如果需求明確屬於網站檔案的新增、修改、刪除，預設直接動手，不要先要求使用者手動建立檔案或貼出樣板。
-- 完成修改後，再回報實際變更了哪些檔案、做了什麼改動，以及如何預覽結果。
-- 若需求會超出網站範圍，先停下來提醒。
+- 如果使用者從 Discord 下指令，預設理解成要維護盤前簡報與 Discord 發送流程。
+- 如果需求明確屬於報告生成、內容修正、排程、Discord 訊息輸出，預設直接動手。
+- 完成後回報改了哪些檔案、做了什麼改動，以及如何驗證。
+- 若需求超出簡報 / Discord 範圍，先停下來提醒。

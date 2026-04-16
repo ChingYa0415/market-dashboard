@@ -11,6 +11,13 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config" / "premarket_report.json"
 FINNHUB_BASE_URL = "https://finnhub.io/api/v1/company-news"
+FINNHUB_QUOTE_URL = "https://finnhub.io/api/v1/quote"
+FRED_BASE_URL = "https://api.stlouisfed.org/fred/series/observations"
+FRED_SERIES = {
+    "vix": "VIXCLS",
+    "dgs10": "DGS10",
+    "dgs2": "DGS2",
+}
 
 
 def load_config():
@@ -26,68 +33,218 @@ def now_utc_date():
     return datetime.now(ZoneInfo("UTC")).date()
 
 
-def load_api_key():
+def load_api_keys():
     load_dotenv()
-    return os.getenv("MARKET_DATA_API_KEY") or os.getenv("FINNHUB_API_KEY", "")
-
-
-def build_overview():
     return {
-        "marketSentiment": "待補資料",
-        "mainTheme": "待補資料",
-        "riskEvent": "待補資料",
-        "focus": ["NVDA", "AMD", "ETN"],
+        "finnhub": os.getenv("MARKET_DATA_API_KEY") or os.getenv("FINNHUB_API_KEY", ""),
+        "fred": os.getenv("FRED_API_KEY", ""),
     }
 
 
-def fetch_company_news(symbol, api_key, empty_news_text):
-    if not api_key:
-        return {
-            "headline": empty_news_text,
-            "source": "fallback",
-            "summary": "未設定 Finnhub API key，使用骨架內容。",
-            "url": "",
-        }
+class FinnhubClient:
+    def __init__(self, api_key):
+        self.api_key = api_key
+        self.rate_limited = False
 
-    today = now_utc_date()
-    date_from = (today - timedelta(days=3)).isoformat()
-    date_to = today.isoformat()
+    def _request(self, url, params):
+        if not self.api_key:
+            return None, "missing_key"
+        if self.rate_limited:
+            return None, "rate_limited"
 
-    try:
-        response = requests.get(
+        try:
+            response = requests.get(url, params={**params, "token": self.api_key}, timeout=20)
+        except Exception:
+            return None, "request_failed"
+
+        if response.status_code == 429:
+            self.rate_limited = True
+            return None, "rate_limited"
+
+        try:
+            payload = response.json()
+        except ValueError:
+            payload = None
+
+        error_text = ""
+        if isinstance(payload, dict):
+            error_text = str(payload.get("error") or payload.get("message") or "").lower()
+
+        if "limit" in error_text or "quota" in error_text or "rate" in error_text:
+            self.rate_limited = True
+            return None, "rate_limited"
+
+        if response.status_code >= 400:
+            return None, "request_failed"
+
+        return payload, "ok"
+
+    def fetch_company_news(self, symbol, empty_news_text):
+        if not self.api_key:
+            return {
+                "headline": empty_news_text,
+                "source": "fallback",
+                "summary": "未設定 Finnhub API key，使用骨架內容。",
+                "url": "",
+            }
+        if self.rate_limited:
+            return {
+                "headline": empty_news_text,
+                "source": "fallback",
+                "summary": "Finnhub 免費額度已用完，等待額度恢復後再更新新聞。",
+                "url": "",
+            }
+
+        today = now_utc_date()
+        date_from = (today - timedelta(days=3)).isoformat()
+        date_to = today.isoformat()
+        items, status = self._request(
             FINNHUB_BASE_URL,
-            params={
+            {
                 "symbol": symbol,
                 "from": date_from,
                 "to": date_to,
-                "token": api_key,
+            },
+        )
+
+        if status == "rate_limited":
+            return {
+                "headline": empty_news_text,
+                "source": "fallback",
+                "summary": "Finnhub 免費額度已用完，等待額度恢復後再更新新聞。",
+                "url": "",
+            }
+        if status != "ok":
+            return {
+                "headline": empty_news_text,
+                "source": "fallback",
+                "summary": "新聞抓取失敗，使用骨架內容。",
+                "url": "",
+            }
+        if not items:
+            return {
+                "headline": empty_news_text,
+                "source": "fallback",
+                "summary": "最近沒有抓到可用新聞。",
+                "url": "",
+            }
+
+        best = pick_best_news(items)
+        return {
+            "headline": clean_text(best.get("headline")) or empty_news_text,
+            "source": clean_text(best.get("source")) or "Unknown",
+            "summary": clean_text(best.get("summary"), limit=220) or "摘要不足",
+            "url": best.get("url", ""),
+        }
+
+    def fetch_quote(self, symbol):
+        if not self.api_key:
+            return "未設定 Finnhub API key"
+        if self.rate_limited:
+            return "Finnhub 免費額度已用完，等待恢復"
+
+        payload, status = self._request(FINNHUB_QUOTE_URL, {"symbol": symbol})
+        if status == "rate_limited":
+            return "Finnhub 免費額度已用完，等待恢復"
+        if status != "ok" or not isinstance(payload, dict):
+            return "資料暫時不可用"
+
+        current = payload.get("c")
+        previous_close = payload.get("pc")
+        if not current or not previous_close:
+            return "資料暫時不可用"
+
+        change_pct = ((current - previous_close) / previous_close) * 100 if previous_close else 0
+        return f"最新 {current:.2f} / 前收 {previous_close:.2f} / {change_pct:+.2f}%"
+
+
+def fetch_fred_latest(series_id, api_key):
+    if not api_key:
+        return None
+
+    try:
+        response = requests.get(
+            FRED_BASE_URL,
+            params={
+                "series_id": series_id,
+                "api_key": api_key,
+                "file_type": "json",
+                "sort_order": "desc",
+                "limit": 10,
             },
             timeout=20,
         )
         response.raise_for_status()
-        items = response.json()
+        payload = response.json()
     except Exception:
+        return None
+
+    for item in payload.get("observations", []):
+        value = item.get("value")
+        if value in {None, ".", ""}:
+            continue
+        try:
+            return float(value)
+        except ValueError:
+            continue
+    return None
+
+
+def build_overview(fred_api_key, focus):
+    if not fred_api_key:
         return {
-            "headline": empty_news_text,
-            "source": "fallback",
-            "summary": "新聞抓取失敗，使用骨架內容。",
-            "url": "",
+            "marketSentiment": "待補資料（未設定 FRED_API_KEY）",
+            "mainTheme": "以個股新聞骨架彙整，待補更完整市場主線判讀",
+            "riskEvent": "未設定 FRED_API_KEY，宏觀風險欄位維持骨架",
+            "focus": focus,
         }
 
-    if not items:
+    vix = fetch_fred_latest(FRED_SERIES["vix"], fred_api_key)
+    dgs10 = fetch_fred_latest(FRED_SERIES["dgs10"], fred_api_key)
+    dgs2 = fetch_fred_latest(FRED_SERIES["dgs2"], fred_api_key)
+
+    if vix is None and dgs10 is None and dgs2 is None:
         return {
-            "headline": empty_news_text,
-            "source": "fallback",
-            "summary": "最近沒有抓到可用新聞。",
-            "url": "",
+            "marketSentiment": "待補資料（FRED 暫時不可用）",
+            "mainTheme": "以個股新聞骨架彙整，待補更完整市場主線判讀",
+            "riskEvent": "FRED 資料拉取失敗，宏觀風險欄位維持骨架",
+            "focus": focus,
         }
 
-    best = pick_best_news(items)
+    if vix is None:
+        market_sentiment = "市場情緒待補（VIX 暫時不可用）"
+    elif vix >= 25:
+        market_sentiment = f"風險偏好偏弱（VIX {vix:.2f}）"
+    elif vix >= 18:
+        market_sentiment = f"市場情緒中性偏保守（VIX {vix:.2f}）"
+    else:
+        market_sentiment = f"市場情緒偏穩定（VIX {vix:.2f}）"
+
+    curve_text = ""
+    if dgs10 is not None and dgs2 is not None:
+        spread = dgs10 - dgs2
+        curve_text = f"10Y {dgs10:.2f}% / 2Y {dgs2:.2f}% / 利差 {spread:+.2f}%"
+        if spread < 0:
+            main_theme = "利率曲線偏倒掛，市場仍在交易成長放緩與降息預期"
+        elif spread < 0.5:
+            main_theme = "利率曲線偏平，市場主線仍以個股消息與宏觀數據混合驅動"
+        else:
+            main_theme = "利率曲線較正常，宏觀壓力相對緩和，個股消息面主導"
+    else:
+        main_theme = "以個股新聞骨架彙整，宏觀利率資料仍不完整"
+
+    risk_parts = []
+    if vix is not None:
+        risk_parts.append(f"VIX {vix:.2f}")
+    if curve_text:
+        risk_parts.append(curve_text)
+    risk_event = " / ".join(risk_parts) if risk_parts else "宏觀風險資料暫時不足"
+
     return {
-        "headline": clean_text(best.get("headline")) or empty_news_text,
-        "source": clean_text(best.get("source")) or "Unknown",
-        "summary": clean_text(best.get("summary"), limit=220) or "摘要不足",
-        "url": best.get("url", ""),
+        "marketSentiment": market_sentiment,
+        "mainTheme": main_theme,
+        "riskEvent": risk_event,
+        "focus": focus,
     }
 
 
@@ -138,8 +295,8 @@ def build_observation(symbol, source):
     return f"留意 {symbol} 是否延續 {source} 所反映的市場敘事。"
 
 
-def build_symbol_entry(symbol, empty_news_text, api_key):
-    news = fetch_company_news(symbol, api_key, empty_news_text)
+def build_symbol_entry(symbol, empty_news_text, finnhub_client):
+    news = finnhub_client.fetch_company_news(symbol, empty_news_text)
     news_text = news["headline"]
     if news.get("source") and news["source"] != "fallback":
         news_text = f"{news_text}（{news['source']}）"
@@ -151,7 +308,7 @@ def build_symbol_entry(symbol, empty_news_text, api_key):
         "newsSummary": news.get("summary", ""),
         "newsUrl": news.get("url", ""),
         "judgement": build_judgement(news.get("summary", "")),
-        "premarket": "資料待接入",
+        "premarket": finnhub_client.fetch_quote(symbol),
         "openingBias": infer_bias_from_news(news.get("headline", ""), news.get("summary", "")),
         "observation": build_observation(symbol, news.get("source", "fallback")),
     }
@@ -161,25 +318,21 @@ def build_report(config):
     empty_news_text = config["report"]["empty_news_text"]
     core_symbols = config["symbols"]["core"]
     watch_symbols = config["symbols"]["watch"]
-    api_key = load_api_key()
+    api_keys = load_api_keys()
+    finnhub_client = FinnhubClient(api_keys["finnhub"])
 
-    core_entries = [build_symbol_entry(symbol, empty_news_text, api_key) for symbol in core_symbols]
-    watch_entries = [build_symbol_entry(symbol, empty_news_text, api_key) for symbol in watch_symbols]
+    core_entries = [build_symbol_entry(symbol, empty_news_text, finnhub_client) for symbol in core_symbols]
+    watch_entries = [build_symbol_entry(symbol, empty_news_text, finnhub_client) for symbol in watch_symbols]
     focus = (core_symbols + watch_symbols)[:3]
 
     return {
         "generatedAt": now_taipei().isoformat(),
-        "overview": {
-            **build_overview(),
-            "focus": focus,
-            "mainTheme": "以個股新聞骨架彙整，待補更完整市場主線判讀",
-            "riskEvent": "若新聞量不足，需另查財報、Fed 與宏觀事件",
-        },
+        "overview": build_overview(api_keys["fred"], focus),
         "core": core_entries,
         "watch": watch_entries,
         "actionSummary": {
             "mostImportant": focus,
-            "coreView": "先用免費新聞來源建立晚間快報骨架，關鍵決策仍需人工複核。",
+            "coreView": "目前僅使用免費的 Finnhub 與 FRED 來源，關鍵決策仍需人工複核。",
             "highestVolatility": watch_symbols[:2],
             "ifMarketWeakens": watch_symbols[:1],
         },

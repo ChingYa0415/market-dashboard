@@ -20,11 +20,7 @@
 - 主線題材
 - 優先關注
 - 最值得注意標的
-- 網站連結
-
-目前網站連結預設為：
-
-- `https://chingya0415.github.io/market-dashboard/`
+- 最新 Markdown 簡報正文
 
 ## 環境變數
 
@@ -68,10 +64,8 @@ python scripts/run_premarket_report.py
 
 ## 目前尚未完成
 
-- 真實市場資料 API 串接
-- 美股休市日自動跳過
-- GitHub Pages 自動更新 JSON 的正式流程
 - 失敗重試 / 錯誤告警
+- 更細緻的 Discord 訊息分段與格式化
 
 ## 建議下一步
 
